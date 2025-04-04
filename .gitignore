@@ -1,0 +1,29 @@
+/vendor/
+/web/core/
+/web/modules/contrib/
+/web/profiles/contrib/
+/web/themes/contrib/
+/web/libraries/
+/web/sites/default/files/
+/web/sites/default/settings.local.php
+/web/sites/default/services.yml
+
+/sql/
+web/sites/default/files/
+
+/node_modules/
+/.yarn/
+
+# Environment + Lando
+/.env
+/.lando.local.yml
+.lando/
+/lando.yml.bak
+
+# IDE + OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+
