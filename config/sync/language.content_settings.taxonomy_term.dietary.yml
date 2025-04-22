@@ -1,0 +1,11 @@
+uuid: 57a78959-8ba4-45d0-ab99-99d11c76a0dc
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.dietary
+id: taxonomy_term.dietary
+target_entity_type_id: taxonomy_term
+target_bundle: dietary
+default_langcode: site_default
+language_alterable: false

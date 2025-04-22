@@ -1,0 +1,112 @@
+uuid: 1e852b14-b217-4f95-be11-526ba846e026
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.recipe.body
+    - field.field.node.recipe.field_cuisine
+    - field.field.node.recipe.field_dietary_preference
+    - field.field.node.recipe.field_difficulty
+    - field.field.node.recipe.field_ingredients
+    - field.field.node.recipe.field_number_of_servings
+    - field.field.node.recipe.field_occasion
+    - field.field.node.recipe.field_preparation_steps
+    - field.field.node.recipe.field_recipe_image
+    - field.field.node.recipe.field_recipe_time_hours
+    - field.field.node.recipe.field_recipe_time_minutes
+    - field.field.node.recipe.field_tags_categories
+    - field.field.node.recipe.field_time_to_prepare
+    - field.field.node.recipe.field_type_of_meal
+    - node.type.recipe
+  module:
+    - image
+    - options
+    - user
+id: node.recipe.teaser
+targetEntityType: node
+bundle: recipe
+mode: teaser
+content:
+  field_cuisine:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_dietary_preference:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_difficulty:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_number_of_servings:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_recipe_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_recipe_time_hours:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_recipe_time_minutes:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_type_of_meal:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_ingredients: true
+  field_occasion: true
+  field_preparation_steps: true
+  field_tags_categories: true
+  field_time_to_prepare: true
+  langcode: true

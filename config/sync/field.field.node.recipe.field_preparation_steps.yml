@@ -1,0 +1,30 @@
+uuid: 520d96b0-b180-4122-aaa3-2d1dcd43d259
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_preparation_steps
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.plain_text
+    - node.type.recipe
+  module:
+    - text
+id: node.recipe.field_preparation_steps
+field_name: field_preparation_steps
+entity_type: node
+bundle: recipe
+label: 'Preparation steps'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats:
+    - basic_html
+    - full_html
+    - plain_text
+field_type: text_with_summary

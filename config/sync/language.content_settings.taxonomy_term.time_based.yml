@@ -1,0 +1,11 @@
+uuid: c991e27b-d930-4062-92e3-3e0fdf58c4a9
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.time_based
+id: taxonomy_term.time_based
+target_entity_type_id: taxonomy_term
+target_bundle: time_based
+default_langcode: site_default
+language_alterable: false

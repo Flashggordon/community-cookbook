@@ -1,0 +1,29 @@
+uuid: f1052f7c-72fb-4ee9-a116-45a0eec22f8a
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_time_to_prepare
+    - node.type.recipe
+    - taxonomy.vocabulary.time_based
+id: node.recipe.field_time_to_prepare
+field_name: field_time_to_prepare
+entity_type: node
+bundle: recipe
+label: 'Time to prepare'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      time_based: time_based
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,20 @@
+uuid: d6acfe78-a201-4c04-b72f-30f5207b296e
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_recipe_time_minutes
+field_name: field_recipe_time_minutes
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

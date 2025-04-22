@@ -1,0 +1,18 @@
+uuid: ab29bb2e-9152-474f-a615-29691ef4ff36
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Recipe
+type: recipe
+description: 'A recipe submitted by a community member'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,11 @@
+uuid: 9e49dd65-f823-4681-90dd-6bd324e8b825
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.recipe_categories
+id: taxonomy_term.recipe_categories
+target_entity_type_id: taxonomy_term
+target_bundle: recipe_categories
+default_langcode: site_default
+language_alterable: false

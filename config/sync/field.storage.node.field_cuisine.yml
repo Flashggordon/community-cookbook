@@ -1,0 +1,20 @@
+uuid: a20f16fd-c125-4602-819e-ec1cbf243bee
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_cuisine
+field_name: field_cuisine
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

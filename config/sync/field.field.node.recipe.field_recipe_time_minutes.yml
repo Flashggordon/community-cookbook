@@ -1,0 +1,23 @@
+uuid: 27c00e42-44a1-4668-8163-f8dd03ca74d5
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_recipe_time_minutes
+    - node.type.recipe
+id: node.recipe.field_recipe_time_minutes
+field_name: field_recipe_time_minutes
+entity_type: node
+bundle: recipe
+label: 'Recipe Time (Minutes)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: 59
+  prefix: ''
+  suffix: min
+field_type: integer

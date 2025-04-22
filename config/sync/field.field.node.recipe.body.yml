@@ -1,0 +1,24 @@
+uuid: 18f870cd-65a0-4050-888e-1c0fde8e4a15
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.recipe
+  module:
+    - text
+id: node.recipe.body
+field_name: body
+entity_type: node
+bundle: recipe
+label: 'Recipe story'
+description: 'Share the story, inspiration or background behind this dish'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

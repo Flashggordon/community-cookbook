@@ -1,0 +1,29 @@
+uuid: 4b1c84cf-c08f-4067-96b0-b7c260489cca
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_occasion
+    - node.type.recipe
+    - taxonomy.vocabulary.occasions
+id: node.recipe.field_occasion
+field_name: field_occasion
+entity_type: node
+bundle: recipe
+label: Occasion
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      occasions: occasions
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
