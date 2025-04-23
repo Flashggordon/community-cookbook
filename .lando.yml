@@ -3,10 +3,13 @@ recipe: drupal10
 config:
   php: '8.3'
   webroot: web
-  database: mariadb:10.4
+
 services:
+  database:
+    type: mariadb:10.6
   appserver:
     type: php:8.3
+
 tooling:
   php:
     service: appserver
