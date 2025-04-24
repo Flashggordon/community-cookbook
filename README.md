@@ -5,10 +5,10 @@ Welcome to the **Community Cookbook** Drupal project! This guide will help you s
 ## 🌐 Site Preview
 
 ### 
-![Homepage Screenshot](images/chickpea-stew.png)
+![Homepage Screenshot](images/chickpea-stew.jpg)
 
 ### 
-![Recipe Screenshot](images/seafood-paella.png)
+![Recipe Screenshot](images/seafood-paella.jpg)
 
 
 
