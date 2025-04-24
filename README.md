@@ -2,6 +2,16 @@
 
 Welcome to the **Community Cookbook** Drupal project! This guide will help you set up the site locally using **Lando**, import the database, and understand the recommended workflow for pushing changes.
 
+## 🌐 Site Preview
+
+### 
+![Homepage Screenshot](images/chickpea-stew.png)
+
+### 
+![Recipe Screenshot](images/seafood-paella.png)
+
+
+
 ---
 
 ## 🚀 Getting Started
