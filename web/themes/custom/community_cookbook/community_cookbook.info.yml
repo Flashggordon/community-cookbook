@@ -1,0 +1,20 @@
+name: 'Community Cookbook'
+type: theme
+description: 'A custom theme for the Community Cookbook project.'
+core_version_requirement: ^10 || ^11
+package: Custom
+base theme: olivero
+
+libraries:
+  - community_cookbook/global-styling
+
+logo:
+  path: 'images/chickpea-stew.jpg'
+
+regions:
+  header: 'Header'
+  primary_menu: 'Primary menu'
+  content: 'Content'
+  sidebar: 'Sidebar'
+  footer: 'Footer'
+

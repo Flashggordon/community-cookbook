@@ -1,0 +1,60 @@
+{#
+ * @file
+ * Default theme implementation to display a single page.
+ * Place this in your theme's templates folder.
+#}
+
+<!DOCTYPE html>
+<html lang="{{ language.getId }}">
+  <head>
+    <head-placeholder token="{{ placeholder_token }}">
+    <title>{{ head_title|safe_join(' | ') }}</title>
+    <css-placeholder token="{{ placeholder_token }}">
+    <js-placeholder token="{{ placeholder_token }}">
+  </head>
+  <body{{ attributes }}>
+    
+    {# Page Top #}
+    {{ page.top }}
+
+    <header class="site-header full-width-header">
+  <div class="site-logo">
+  <a href="{{ path('<front>') }}">
+    <img src="{{ base_path }}themes/custom/community_cookbook/images/community-cookbook-banner.png" alt="{{ site_name }}" />
+  </a>
+</div>
+
+
+  </div>
+
+  <nav class="main-nav">
+    {% if page.primary_menu %}
+      {{ page.primary_menu }}
+    {% endif %}
+  </nav>
+
+  <div class="header-icons">
+    <a href="https://facebook.com" target="_blank" aria-label="Facebook">📘</a>
+    <a href="https://instagram.com" target="_blank" aria-label="Instagram">📷</a>
+    <a href="mailto:you@example.com" aria-label="Email">✉️</a>
+  </div>
+</header>
+
+
+    {# Main Content #}
+    <main role="main" class="main-content">
+      {{ page.content }}
+    </main>
+
+    {# Footer #}
+    {% if page.footer %}
+      <footer class="site-footer">
+        {{ page.footer }}
+      </footer>
+    {% endif %}
+
+    {# Page Bottom #}
+    {{ page.bottom }}
+
+  </body>
+</html>
