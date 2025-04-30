@@ -1,0 +1,18 @@
+uuid: a2c69a44-6cf4-42d3-b74e-b719dade7ecc
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Event
+type: event
+description: 'Used for upcoming events on the homepage or event page'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

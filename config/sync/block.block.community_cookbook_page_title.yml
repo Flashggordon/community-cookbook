@@ -1,0 +1,29 @@
+uuid: 86e21ba6-71ff-45af-a462-f865c5c0cda8
+langcode: en-gb
+status: false
+dependencies:
+  module:
+    - node
+  theme:
+    - community_cookbook
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: community_cookbook_page_title
+theme: community_cookbook
+region: header
+weight: -1
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      event: event

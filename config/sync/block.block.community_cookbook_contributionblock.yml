@@ -1,0 +1,29 @@
+uuid: e9a61945-cf8a-48ef-9155-10540ed079b8
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:80d7e73b-225b-4513-bb2b-2e43d07cd95e'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - community_cookbook
+third_party_settings:
+  block_class:
+    classes: 'contribution-highlight contribution-highlighth2 contribution-highlightp contribution-highlighta.button contribution-highlighta.button:hover'
+id: community_cookbook_contributionblock
+theme: community_cookbook
+region: contribute
+weight: 0
+provider: null
+plugin: 'block_content:80d7e73b-225b-4513-bb2b-2e43d07cd95e'
+settings:
+  id: 'block_content:80d7e73b-225b-4513-bb2b-2e43d07cd95e'
+  label: 'Contribution block'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 7de5b0cd-2083-4c4b-a28b-1e8172e84aca
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - community_cookbook
+_core:
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: community_cookbook_messages
+theme: community_cookbook
+region: header
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

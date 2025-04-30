@@ -1,0 +1,22 @@
+uuid: 4507fd16-2fac-4e19-99e7-90047c1733c8
+langcode: en-gb
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - community_cookbook
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: community_cookbook_content
+theme: community_cookbook
+region: header
+weight: 3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

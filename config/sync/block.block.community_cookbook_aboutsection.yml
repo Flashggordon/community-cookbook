@@ -1,0 +1,25 @@
+uuid: 5fccb0d0-08c4-4373-be28-35b5ea49740d
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a2782b22-07d2-41aa-856c-4826a1d02d52'
+  module:
+    - block_content
+  theme:
+    - community_cookbook
+id: community_cookbook_aboutsection
+theme: community_cookbook
+region: about
+weight: 0
+provider: null
+plugin: 'block_content:a2782b22-07d2-41aa-856c-4826a1d02d52'
+settings:
+  id: 'block_content:a2782b22-07d2-41aa-856c-4826a1d02d52'
+  label: 'About section '
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

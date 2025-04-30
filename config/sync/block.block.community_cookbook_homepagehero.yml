@@ -1,0 +1,25 @@
+uuid: 753940fd-9abe-4eb5-a473-52585bffe6a1
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:hero_section:64dbea3e-2021-4595-a2f9-5080439f6eba'
+  module:
+    - block_content
+  theme:
+    - community_cookbook
+id: community_cookbook_homepagehero
+theme: community_cookbook
+region: hero
+weight: 0
+provider: null
+plugin: 'block_content:64dbea3e-2021-4595-a2f9-5080439f6eba'
+settings:
+  id: 'block_content:64dbea3e-2021-4595-a2f9-5080439f6eba'
+  label: 'Homepage Hero'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: ab8499ee-ac4a-4db7-b7cf-f70072a95339
+langcode: en-gb
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - community_cookbook
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: community_cookbook_powered
+theme: community_cookbook
+region: header
+weight: 4
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }
