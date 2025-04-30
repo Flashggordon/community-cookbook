@@ -13,8 +13,9 @@ logo:
 
 regions:
   header: 'Header'
-  primary_menu: 'Primary menu'
-  content: 'Content'
-  sidebar: 'Sidebar'
+  hero: 'Hero'
+  featured_recipes: 'Featured Recipes'
+  about: 'About'
+  events: 'Upcoming Events'
+  contribute: 'Contribute'
   footer: 'Footer'
-

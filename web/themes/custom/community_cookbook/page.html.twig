@@ -12,49 +12,37 @@
     <css-placeholder token="{{ placeholder_token }}">
     <js-placeholder token="{{ placeholder_token }}">
   </head>
+  
   <body{{ attributes }}>
-    
-    {# Page Top #}
-    {{ page.top }}
-
-    <header class="site-header full-width-header">
-  <div class="site-logo">
-  <a href="{{ path('<front>') }}">
-    <img src="{{ base_path }}themes/custom/community_cookbook/images/community-cookbook-banner.png" alt="{{ site_name }}" />
-  </a>
-</div>
-
-
-  </div>
-
-  <nav class="main-nav">
-    {% if page.primary_menu %}
-      {{ page.primary_menu }}
-    {% endif %}
-  </nav>
-
-  <div class="header-icons">
-    <a href="https://facebook.com" target="_blank" aria-label="Facebook">📘</a>
-    <a href="https://instagram.com" target="_blank" aria-label="Instagram">📷</a>
-    <a href="mailto:you@example.com" aria-label="Email">✉️</a>
-  </div>
+  
+  <header class="site-header">
+  {{ page.header }}
 </header>
 
+<section class="hero-section">
+  {{ page.hero }}
+</section>
 
-    {# Main Content #}
-    <main role="main" class="main-content">
-      {{ page.content }}
-    </main>
+<section class="featured-recipes">
+  {{ page.featured_recipes }}
+</section>
 
-    {# Footer #}
-    {% if page.footer %}
-      <footer class="site-footer">
-        {{ page.footer }}
-      </footer>
-    {% endif %}
+<section class="about-section">
+  {{ page.about }}
+</section>
 
-    {# Page Bottom #}
-    {{ page.bottom }}
+<section class="events-section">
+  {{ page.events }}
+</section>
 
+<section class="contribute-section">
+  {{ page.contribute }}
+</section>
+
+<footer class="site-footer">
+  {{ page.footer }}
+</footer>
+
+    
   </body>
 </html>
