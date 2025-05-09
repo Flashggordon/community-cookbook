@@ -1,0 +1,36 @@
+/* ===== Header Layout ===== */
+/* Site Header */
+.site-header {
+    background-color: #fff8e6;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #fcebd4;
+  }
+  
+  /* Logo */
+  .site-logo {
+    display: flex;
+    align-items: center;
+  }
+  .site-logo img {
+    height: 60px;
+    max-width: 100px;
+    margin-right: 0.75rem;
+  }
+  
+  /* Header Icons */
+  .header-icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .header-icons a {
+    text-decoration: none;
+    color: #814c24;
+    font-weight: 500;
+  }
+  

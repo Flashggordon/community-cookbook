@@ -1,0 +1,15 @@
+uuid: c6864f9a-8d71-4410-86cd-5d1383632697
+langcode: en-gb
+status: true
+dependencies: {  }
+name: recipe_card_thumb
+label: recipe_card_thumb
+effects:
+  28811388-3ccd-4f68-a5e5-070002c8b151:
+    uuid: 28811388-3ccd-4f68-a5e5-070002c8b151
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 200
+      anchor: center-center

@@ -1,0 +1,18 @@
+/* ==== Buttons ==== */
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .header-icons .login {
+    border: 2px solid #5a3a1a;
+    background-color: #fff8e6;
+    color: #5a3a1a;
+  }
+  
+  .header-icons .register {
+    background-color: #7f8c69;
+    color: #fff;
+  }
+  

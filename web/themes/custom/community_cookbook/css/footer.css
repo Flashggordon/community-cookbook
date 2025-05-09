@@ -1,0 +1,12 @@
+/* # Styles for the footer */
+
+/* ===== Footer ===== */
+.site-footer {
+    background-color: #fdf2e9;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    border-top: 1px solid #f5cba7;
+  }
+  
