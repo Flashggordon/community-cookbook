@@ -13,36 +13,37 @@
     <js-placeholder token="{{ placeholder_token }}">
   </head>
   
-  <body{{ attributes }}>
-  
+<body{{ attributes }}>
+
   <header class="site-header">
-  {{ page.header }}
-</header>
+    {{ page.header }}
+  </header>
 
-<section class="hero-section">
-  {{ page.hero }}
-</section>
+  <main class="main-content">
+    <section class="hero-section">
+      {{ page.hero }}
+    </section>
 
-<section class="featured-recipes">
-  {{ page.featured_recipes }}
-</section>
+    <section class="featured-recipes">
+      {{ page.featured_recipes }}
+    </section>
 
-<section class="about-section">
-  {{ page.about }}
-</section>
+    <section class="about-section">
+      {{ page.about }}
+    </section>
 
-<section class="events-section">
-  {{ page.events }}
-</section>
+    <section class="events-section">
+      {{ page.events }}
+    </section>
 
-<section class="contribute-section">
-  {{ page.contribute }}
-</section>
+    <section class="contribute-section">
+      {{ page.contribute }}
+    </section>
+  </main>
 
-<footer class="site-footer">
-  {{ page.footer }}
-</footer>
+  <footer class="site-footer">
+    {{ page.footer }}
+  </footer>
 
-    
-  </body>
+</body>
 </html>

@@ -11,6 +11,15 @@ block_classes_stored:
   - 'contribution-highlighta.button:hover'
   - site-logo
   - header-icons
+  - recipe-card
+  - featured-recipes
+  - 'featured-recipes::-webkit-scrollbar'
+  - 'featured-recipes::-webkit-scrollbar-thumb'
+  - recipe-tag
+  - recipe-content
+  - recipe-title
+  - recipe-author
+  - recipe-description
 enable_attributes: true
 enable_auto_complete: true
 qty_classes_per_block: 10

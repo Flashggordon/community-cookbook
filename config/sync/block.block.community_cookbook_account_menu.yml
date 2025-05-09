@@ -17,7 +17,7 @@ _core:
 id: community_cookbook_account_menu
 theme: community_cookbook
 region: header
-weight: -5
+weight: -7
 provider: null
 plugin: 'system_menu_block:account'
 settings:

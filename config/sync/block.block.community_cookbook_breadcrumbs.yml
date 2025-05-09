@@ -11,7 +11,7 @@ _core:
 id: community_cookbook_breadcrumbs
 theme: community_cookbook
 region: header
-weight: -3
+weight: -5
 provider: null
 plugin: system_breadcrumb_block
 settings:

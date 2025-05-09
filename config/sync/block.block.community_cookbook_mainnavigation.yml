@@ -11,7 +11,7 @@ dependencies:
 id: community_cookbook_mainnavigation
 theme: community_cookbook
 region: header
-weight: 2
+weight: 0
 provider: null
 plugin: 'system_menu_block:main'
 settings:

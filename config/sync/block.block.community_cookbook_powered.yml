@@ -11,7 +11,7 @@ _core:
 id: community_cookbook_powered
 theme: community_cookbook
 region: header
-weight: 4
+weight: 2
 provider: null
 plugin: system_powered_by_block
 settings:

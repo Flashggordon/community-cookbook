@@ -13,7 +13,7 @@ third_party_settings:
 id: community_cookbook_sitebranding
 theme: community_cookbook
 region: header
-weight: -9
+weight: -11
 provider: null
 plugin: system_branding_block
 settings:

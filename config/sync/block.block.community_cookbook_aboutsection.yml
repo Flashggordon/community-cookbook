@@ -11,7 +11,7 @@ dependencies:
 id: community_cookbook_aboutsection
 theme: community_cookbook
 region: about
-weight: 0
+weight: -9
 provider: null
 plugin: 'block_content:a2782b22-07d2-41aa-856c-4826a1d02d52'
 settings:

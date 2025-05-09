@@ -11,7 +11,7 @@ _core:
 id: community_cookbook_page_title
 theme: community_cookbook
 region: header
-weight: -1
+weight: -3
 provider: null
 plugin: page_title_block
 settings:

@@ -9,7 +9,7 @@ _core:
 id: community_cookbook_primary_admin_actions
 theme: community_cookbook
 region: header
-weight: -8
+weight: -10
 provider: null
 plugin: local_actions_block
 settings:
