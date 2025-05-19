@@ -1,16 +1,16 @@
-uuid: 9e097dc6-a085-4c2c-9348-bd95763d9500
+uuid: 639de860-a480-4e50-84b7-e91e7db8e720
 langcode: en-gb
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.full
-    - node.type.recipe
+    - node.type.event
     - system.menu.main
   module:
     - node
     - user
-id: all_recipes
-label: 'All Recipes'
+id: event_page
+label: 'Event page'
 module: views
 description: ''
 tag: ''
@@ -23,7 +23,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'All Recipes'
+      title: 'Event page'
       fields:
         title:
           id: title
@@ -143,44 +143,11 @@ display:
           id: type
           table: node_field_data
           field: type
-          relationship: none
-          group_type: group
-          admin_label: ''
           entity_type: node
           entity_field: type
           plugin_id: bundle
-          operator: in
           value:
-            recipe: recipe
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
+            event: event
       style:
         type: grid
       row:
@@ -216,11 +183,11 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: all-recipes
+      path: event-page
       menu:
         type: normal
-        title: 'All recipes '
-        description: ''
+        title: 'Events '
+        description: 'Local events in your area '
         weight: 0
         expanded: false
         menu_name: main

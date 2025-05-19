@@ -5,6 +5,7 @@ dependencies:
   config:
     - views.view.upcoming_events
   module:
+    - block_class
     - views
   theme:
     - community_cookbook
