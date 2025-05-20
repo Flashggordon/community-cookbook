@@ -17,6 +17,7 @@ dependencies:
     - field.field.node.recipe.field_tags_categories
     - field.field.node.recipe.field_time_to_prepare
     - field.field.node.recipe.field_type_of_meal
+    - field.field.node.recipe.layout_builder__layout
     - image.style.thumbnail
     - node.type.recipe
   module:
@@ -173,4 +174,5 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  layout_builder__layout: true
   uid: true

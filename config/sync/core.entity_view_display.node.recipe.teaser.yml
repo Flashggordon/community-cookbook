@@ -18,11 +18,11 @@ dependencies:
     - field.field.node.recipe.field_tags_categories
     - field.field.node.recipe.field_time_to_prepare
     - field.field.node.recipe.field_type_of_meal
+    - field.field.node.recipe.layout_builder__layout
     - node.type.recipe
   module:
     - image
     - layout_builder
-    - layout_discovery
     - options
     - user
 third_party_settings:
@@ -35,8 +35,8 @@ third_party_settings:
         layout_settings:
           label: ''
         components:
-          7c0d048c-bf7e-47f1-af59-3775bd37aaa5:
-            uuid: 7c0d048c-bf7e-47f1-af59-3775bd37aaa5
+          2fe6a037-2dd4-40ee-b963-979d5b338b74:
+            uuid: 2fe6a037-2dd4-40ee-b963-979d5b338b74
             region: content
             configuration:
               id: 'extra_field_block:node:recipe:links'
@@ -45,8 +45,8 @@ third_party_settings:
                 entity: layout_builder.entity
             weight: 0
             additional: {  }
-          301c236d-9fce-452e-bbce-c62164fbfefe:
-            uuid: 301c236d-9fce-452e-bbce-c62164fbfefe
+          135e576e-9753-4071-b65b-a3a78f4652f2:
+            uuid: 135e576e-9753-4071-b65b-a3a78f4652f2
             region: content
             configuration:
               id: 'field_block:node:recipe:field_recipe_image'
@@ -64,8 +64,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 1
             additional: {  }
-          0d44712e-e77c-41a8-a199-fd2f233085aa:
-            uuid: 0d44712e-e77c-41a8-a199-fd2f233085aa
+          5d984bb8-7260-4bc8-b245-ddd5dc7961af:
+            uuid: 5d984bb8-7260-4bc8-b245-ddd5dc7961af
             region: content
             configuration:
               id: 'field_block:node:recipe:field_type_of_meal'
@@ -80,8 +80,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 2
             additional: {  }
-          2c29be00-8541-4d50-af87-4818a7527ace:
-            uuid: 2c29be00-8541-4d50-af87-4818a7527ace
+          254bdd40-f5ae-47a3-aa00-0875f0af7a2f:
+            uuid: 254bdd40-f5ae-47a3-aa00-0875f0af7a2f
             region: content
             configuration:
               id: 'field_block:node:recipe:field_recipe_time_minutes'
@@ -97,8 +97,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 3
             additional: {  }
-          385a8c83-c25d-4b62-be3f-bd21afa16eee:
-            uuid: 385a8c83-c25d-4b62-be3f-bd21afa16eee
+          4e13ee30-829f-4cee-b15d-b4c8d1cafc6f:
+            uuid: 4e13ee30-829f-4cee-b15d-b4c8d1cafc6f
             region: content
             configuration:
               id: 'field_block:node:recipe:field_recipe_time_hours'
@@ -114,8 +114,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 4
             additional: {  }
-          4cfafef2-cb64-4359-bd80-b7b8ad9edde7:
-            uuid: 4cfafef2-cb64-4359-bd80-b7b8ad9edde7
+          f3a65582-53fa-46f3-8e37-4b41574bf716:
+            uuid: f3a65582-53fa-46f3-8e37-4b41574bf716
             region: content
             configuration:
               id: 'field_block:node:recipe:field_dietary_preference'
@@ -130,8 +130,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 5
             additional: {  }
-          fe08c7f8-bbca-444a-9642-5a887514008d:
-            uuid: fe08c7f8-bbca-444a-9642-5a887514008d
+          86a88817-6a08-4139-9926-82f47989be76:
+            uuid: 86a88817-6a08-4139-9926-82f47989be76
             region: content
             configuration:
               id: 'field_block:node:recipe:field_difficulty'
@@ -145,8 +145,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 6
             additional: {  }
-          7037b2fe-41b3-4cf2-8bb3-431b5ad7c0c0:
-            uuid: 7037b2fe-41b3-4cf2-8bb3-431b5ad7c0c0
+          d875c110-f476-434d-aba3-000a9b171288:
+            uuid: d875c110-f476-434d-aba3-000a9b171288
             region: content
             configuration:
               id: 'field_block:node:recipe:field_number_of_servings'
@@ -162,8 +162,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 7
             additional: {  }
-          872b008c-475e-48b4-afa5-6493d0e77c76:
-            uuid: 872b008c-475e-48b4-afa5-6493d0e77c76
+          e6e7eccc-1338-4865-b655-0a76de0611b3:
+            uuid: e6e7eccc-1338-4865-b655-0a76de0611b3
             region: content
             configuration:
               id: 'field_block:node:recipe:field_cuisine'
@@ -266,3 +266,4 @@ hidden:
   field_tags_categories: true
   field_time_to_prepare: true
   langcode: true
+  layout_builder__layout: true

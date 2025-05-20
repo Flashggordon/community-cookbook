@@ -1,8 +1,9 @@
-uuid: 3a74efdf-792f-4ecc-b64f-7725ece0cebe
+uuid: 8e856dea-b852-4be8-b8a1-10c2fb92cc43
 langcode: en-gb
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.recipe.body
     - field.field.node.recipe.field_cuisine
     - field.field.node.recipe.field_dietary_preference
@@ -17,27 +18,25 @@ dependencies:
     - field.field.node.recipe.field_tags_categories
     - field.field.node.recipe.field_time_to_prepare
     - field.field.node.recipe.field_type_of_meal
-    - field.field.node.recipe.layout_builder__layout
     - node.type.recipe
   module:
     - image
     - layout_builder
-    - layout_discovery
     - options
     - text
     - user
 third_party_settings:
   layout_builder:
     enabled: true
-    allow_custom: false
+    allow_custom: true
     sections:
       -
         layout_id: layout_onecol
         layout_settings:
           label: ''
         components:
-          cb03ca55-289f-4142-9fe6-fe4c3ae7c598:
-            uuid: cb03ca55-289f-4142-9fe6-fe4c3ae7c598
+          7cef58f6-21e5-4e6a-9706-ef32986f0d21:
+            uuid: 7cef58f6-21e5-4e6a-9706-ef32986f0d21
             region: content
             configuration:
               id: 'extra_field_block:node:recipe:links'
@@ -46,8 +45,8 @@ third_party_settings:
                 entity: layout_builder.entity
             weight: 0
             additional: {  }
-          448db803-4ceb-45d9-98ae-355881b62c26:
-            uuid: 448db803-4ceb-45d9-98ae-355881b62c26
+          339e1224-e354-4984-9482-9773c3826cf7:
+            uuid: 339e1224-e354-4984-9482-9773c3826cf7
             region: content
             configuration:
               id: 'field_block:node:recipe:field_recipe_image'
@@ -65,8 +64,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 1
             additional: {  }
-          fed8523f-2e56-4d28-a41d-1360c540793a:
-            uuid: fed8523f-2e56-4d28-a41d-1360c540793a
+          62faa55e-0fc4-4fd0-abdd-1698abaecb63:
+            uuid: 62faa55e-0fc4-4fd0-abdd-1698abaecb63
             region: content
             configuration:
               id: 'field_block:node:recipe:field_recipe_time_hours'
@@ -82,8 +81,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 2
             additional: {  }
-          ecb200d4-0bcc-4571-9e66-61c56c790a9b:
-            uuid: ecb200d4-0bcc-4571-9e66-61c56c790a9b
+          276a7a93-faa4-40c5-9fbe-4c8a237d4b3c:
+            uuid: 276a7a93-faa4-40c5-9fbe-4c8a237d4b3c
             region: content
             configuration:
               id: 'field_block:node:recipe:field_recipe_time_minutes'
@@ -99,8 +98,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 3
             additional: {  }
-          b0128efe-e85c-4f80-ad13-fe281c326699:
-            uuid: b0128efe-e85c-4f80-ad13-fe281c326699
+          2f5df345-934b-4e24-a927-723dad9973fb:
+            uuid: 2f5df345-934b-4e24-a927-723dad9973fb
             region: content
             configuration:
               id: 'field_block:node:recipe:field_number_of_servings'
@@ -116,8 +115,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 4
             additional: {  }
-          461b2c2a-f7c4-431a-b411-9b779cf82bbe:
-            uuid: 461b2c2a-f7c4-431a-b411-9b779cf82bbe
+          9ad9e9fa-ec40-4c2b-a1e3-854d95dde198:
+            uuid: 9ad9e9fa-ec40-4c2b-a1e3-854d95dde198
             region: content
             configuration:
               id: 'field_block:node:recipe:field_difficulty'
@@ -131,8 +130,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 5
             additional: {  }
-          d44e13d2-9c3f-4c4d-a690-0b18a73de249:
-            uuid: d44e13d2-9c3f-4c4d-a690-0b18a73de249
+          71a21c67-edb1-47de-b80e-4ec2472a4978:
+            uuid: 71a21c67-edb1-47de-b80e-4ec2472a4978
             region: content
             configuration:
               id: 'field_block:node:recipe:field_type_of_meal'
@@ -147,8 +146,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 6
             additional: {  }
-          c05381b0-bf00-4d83-8025-d22b69101fa8:
-            uuid: c05381b0-bf00-4d83-8025-d22b69101fa8
+          c1e5aa8c-2fbb-4ba2-89e8-002ba8a1b7b5:
+            uuid: c1e5aa8c-2fbb-4ba2-89e8-002ba8a1b7b5
             region: content
             configuration:
               id: 'field_block:node:recipe:field_ingredients'
@@ -162,8 +161,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 7
             additional: {  }
-          f0f2ef7c-ab4a-404c-b007-825ecab99b83:
-            uuid: f0f2ef7c-ab4a-404c-b007-825ecab99b83
+          259a5011-1ead-4f7f-8c61-d1725ebc5b29:
+            uuid: 259a5011-1ead-4f7f-8c61-d1725ebc5b29
             region: content
             configuration:
               id: 'field_block:node:recipe:body'
@@ -177,8 +176,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 8
             additional: {  }
-          42a52cee-e221-4f2e-8afe-93f233485da8:
-            uuid: 42a52cee-e221-4f2e-8afe-93f233485da8
+          49c58f51-bcf6-4a33-80e7-b5626852c39e:
+            uuid: 49c58f51-bcf6-4a33-80e7-b5626852c39e
             region: content
             configuration:
               id: 'field_block:node:recipe:field_preparation_steps'
@@ -192,8 +191,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 9
             additional: {  }
-          89e9a188-04a5-4709-ae4a-68893d39d078:
-            uuid: 89e9a188-04a5-4709-ae4a-68893d39d078
+          e2ec2084-2911-4942-909c-429df3433716:
+            uuid: e2ec2084-2911-4942-909c-429df3433716
             region: content
             configuration:
               id: 'field_block:node:recipe:field_tags_categories'
@@ -208,8 +207,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 10
             additional: {  }
-          dc35c7da-c13b-4cb8-93f7-12df62d130b8:
-            uuid: dc35c7da-c13b-4cb8-93f7-12df62d130b8
+          eed6c483-5600-4df7-a65b-e7d666273fbc:
+            uuid: eed6c483-5600-4df7-a65b-e7d666273fbc
             region: content
             configuration:
               id: 'field_block:node:recipe:field_dietary_preference'
@@ -224,8 +223,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 11
             additional: {  }
-          b1b09748-8f69-43a5-99dd-11d0c2616669:
-            uuid: b1b09748-8f69-43a5-99dd-11d0c2616669
+          48f22f8f-d4fa-4b27-80dd-4f7e3e48694e:
+            uuid: 48f22f8f-d4fa-4b27-80dd-4f7e3e48694e
             region: content
             configuration:
               id: 'field_block:node:recipe:field_occasion'
@@ -240,8 +239,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 12
             additional: {  }
-          6a8a996e-9d77-489a-86d3-9f81b1bfe85a:
-            uuid: 6a8a996e-9d77-489a-86d3-9f81b1bfe85a
+          a5d0078a-6036-4454-9c70-a22732d0a98f:
+            uuid: a5d0078a-6036-4454-9c70-a22732d0a98f
             region: content
             configuration:
               id: 'field_block:node:recipe:field_time_to_prepare'
@@ -256,8 +255,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 13
             additional: {  }
-          541b7e7c-6676-478d-95a6-f8b8326ccec5:
-            uuid: 541b7e7c-6676-478d-95a6-f8b8326ccec5
+          8819f6f8-dea7-47ab-a0fd-dc52fa28491c:
+            uuid: 8819f6f8-dea7-47ab-a0fd-dc52fa28491c
             region: content
             configuration:
               id: 'field_block:node:recipe:field_cuisine'
@@ -273,10 +272,10 @@ third_party_settings:
             weight: 14
             additional: {  }
         third_party_settings: {  }
-id: node.recipe.default
+id: node.recipe.full
 targetEntityType: node
 bundle: recipe
-mode: default
+mode: full
 content:
   body:
     type: text_default
@@ -399,4 +398,3 @@ content:
     region: content
 hidden:
   langcode: true
-  layout_builder__layout: true

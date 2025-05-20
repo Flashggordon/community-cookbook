@@ -5,7 +5,7 @@ dependencies:
   config:
     - views.view.upcoming_events
   module:
-    - block_class
+    - system
     - views
   theme:
     - community_cookbook
@@ -22,4 +22,8 @@ settings:
   provider: views
   views_label: ''
   items_per_page: none
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front> \r\n/event-page"

@@ -5,7 +5,6 @@ dependencies:
   content:
     - 'block_content:hero_section:64dbea3e-2021-4595-a2f9-5080439f6eba'
   module:
-    - block_class
     - block_content
     - system
   theme:
