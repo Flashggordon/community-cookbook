@@ -6,7 +6,6 @@ dependencies:
     - 'block_content:hero_section:64dbea3e-2021-4595-a2f9-5080439f6eba'
   module:
     - block_content
-    - system
   theme:
     - community_cookbook
 id: community_cookbook_homepagehero
@@ -23,8 +22,4 @@ settings:
   status: true
   info: ''
   view_mode: full
-visibility:
-  request_path:
-    id: request_path
-    negate: false
-    pages: "<front>\r\n"
+visibility: {  }
