@@ -3,13 +3,12 @@ langcode: en-gb
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.full
+    - core.entity_view_mode.node.teaser
     - node.type.recipe
     - system.menu.main
     - taxonomy.vocabulary.dietary
+    - taxonomy.vocabulary.recipe_categories
     - taxonomy.vocabulary.world_cuisine
-  content:
-    - 'taxonomy_term:dietary:7eb19285-a5ab-49d8-90fa-1e27646dcda1'
   module:
     - node
     - search
@@ -237,13 +236,12 @@ display:
           admin_label: ''
           plugin_id: taxonomy_index_tid
           operator: or
-          value:
-            16: 16
+          value: {  }
           group: 1
           exposed: true
           expose:
             operator_id: field_type_of_meal_target_id_op
-            label: 'Type of meal (field_type_of_meal)'
+            label: 'Type of meal '
             description: ''
             use_operator: false
             operator: field_type_of_meal_target_id_op
@@ -275,7 +273,7 @@ display:
               2: {  }
               3: {  }
           reduce_duplicates: true
-          vid: dietary
+          vid: recipe_categories
           type: select
           hierarchy: false
           limit: true
@@ -294,8 +292,8 @@ display:
           exposed: true
           expose:
             operator_id: field_cuisine_target_id_op
-            label: 'Cuisine (field_cuisine)'
-            description: null
+            label: 'Cuisine '
+            description: ''
             use_operator: false
             operator: field_cuisine_target_id_op
             operator_limit_selection: false
@@ -306,6 +304,9 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
             reduce: false
           is_grouped: false
           group_info:
@@ -325,13 +326,61 @@ display:
           hierarchy: false
           limit: true
           error_message: true
+        field_dietary_preference_target_id:
+          id: field_dietary_preference_target_id
+          table: node__field_dietary_preference
+          field: field_dietary_preference_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_dietary_preference_target_id_op
+            label: 'Dietary preference '
+            description: ''
+            use_operator: false
+            operator: field_dietary_preference_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_dietary_preference_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: dietary
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
       style:
         type: grid
       row:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: full
+          view_mode: teaser
       query:
         type: views_query
         options:
@@ -366,7 +415,7 @@ display:
         type: normal
         title: 'All recipes '
         description: ''
-        weight: 0
+        weight: -49
         expanded: false
         menu_name: main
         parent: ''

@@ -11,6 +11,8 @@ dependencies:
     - field.field.node.event.layout_builder__layout
     - node.type.event
   module:
+    - datetime
+    - media
     - text
     - user
 id: node.event.teaser
@@ -22,18 +24,36 @@ content:
     type: text_summary_or_trimmed
     label: hidden
     settings:
-      trim_length: 600
+      trim_length: 300
     third_party_settings: {  }
-    weight: 101
+    weight: 2
+    region: content
+  field_event_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_field_event_image:
+    type: media_thumbnail
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 3
     region: content
 hidden:
-  field_event_date: true
-  field_field_event_image: true
   field_location: true
   langcode: true
   layout_builder__layout: true
