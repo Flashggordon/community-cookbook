@@ -1,6 +1,6 @@
 /* ===== Main Layout Wrapper ===== */
 .main-content {
-  max-width: 1200px;
+  max-width: none;
   margin: 0 auto;
   padding: 2rem;
 }

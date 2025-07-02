@@ -104,6 +104,11 @@ https://community-cookbook.lndo.site
 
 ---
 
+If you get a site rendering but not with the admin url then use this command 
+
+lando drush uli --uri=http://community-cookbook.lndo.site
+
+
 ## ✅ Notes
 - Admin UI changes (like fields, content types, etc.) should be followed by `lando drush cex -y` to export to code.
 - Always run `lando drush updb` after pulling the latest changes or importing config.
