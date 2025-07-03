@@ -5,13 +5,17 @@ dependencies:
   config:
     - system.menu.main
   module:
+    - block_class
     - system
   theme:
     - community_cookbook
+third_party_settings:
+  block_class:
+    classes: hero-background
 id: community_cookbook_mainnavigation
 theme: community_cookbook
-region: header
-weight: 0
+region: secondary_menu
+weight: -11
 provider: null
 plugin: 'system_menu_block:main'
 settings:

@@ -11,7 +11,7 @@ _core:
 id: community_cookbook_syndicate
 theme: community_cookbook
 region: header
-weight: 3
+weight: 2
 provider: null
 plugin: node_syndicate_block
 settings:

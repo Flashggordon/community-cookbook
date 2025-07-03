@@ -11,7 +11,7 @@ _core:
 id: community_cookbook_messages
 theme: community_cookbook
 region: header
-weight: -9
+weight: -8
 provider: null
 plugin: system_messages_block
 settings:

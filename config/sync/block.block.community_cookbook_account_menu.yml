@@ -16,8 +16,8 @@ _core:
   default_config_hash: gmxYWWHmgbe0Pnv8y48ZLSLH5mEHejOjAP6RLxUfdzU
 id: community_cookbook_account_menu
 theme: community_cookbook
-region: header
-weight: -7
+region: footer_top
+weight: -11
 provider: null
 plugin: 'system_menu_block:account'
 settings:

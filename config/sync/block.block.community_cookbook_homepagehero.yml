@@ -5,9 +5,13 @@ dependencies:
   content:
     - 'block_content:hero_section:64dbea3e-2021-4595-a2f9-5080439f6eba'
   module:
+    - block_class
     - block_content
   theme:
     - community_cookbook
+third_party_settings:
+  block_class:
+    classes: hero-background
 id: community_cookbook_homepagehero
 theme: community_cookbook
 region: hero

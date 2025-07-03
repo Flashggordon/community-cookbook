@@ -20,6 +20,7 @@ block_classes_stored:
   - recipe-title
   - recipe-author
   - recipe-description
+  - hero-background
 enable_attributes: true
 enable_auto_complete: true
 qty_classes_per_block: 10
