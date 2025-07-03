@@ -1,6 +1,24 @@
-/* ===== Main Layout Wrapper ===== */
-.main-content {
-  max-width: none;
-  margin: 0 auto;
+/* Community Cookbook Base Styles */
+
+body {
+  background: #fffaf3;
+  color: #333;
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #ca6702;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.hero-background {
+  background-color: #a32571;
   padding: 2rem;
+  border-radius: 8px;
 }

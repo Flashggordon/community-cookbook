@@ -1,49 +1,109 @@
 {#
- * @file
- * Default theme implementation to display a single page.
- * Place this in your theme's templates folder.
+  Custom page.html.twig for Community Cookbook
+  Based on Olivero with added regions
 #}
 
 <!DOCTYPE html>
-<html lang="{{ language.getId }}">
+<html{{ html_attributes }}>
   <head>
     <head-placeholder token="{{ placeholder_token }}">
-    <title>{{ head_title|safe_join(' | ') }}</title>
+    <title>{{ head_title }}</title>
     <css-placeholder token="{{ placeholder_token }}">
     <js-placeholder token="{{ placeholder_token }}">
   </head>
-  
-<body{{ attributes }}>
+  <body{{ attributes }}>
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      {{ 'Skip to main content'|t }}
+    </a>
 
-  <header class="site-header">
-    {{ page.header }}
-  </header>
+    {% if page.header %}
+      <header role="banner">
+        {{ page.header }}
+      </header>
+    {% endif %}
 
-  <main class="main-content">
-    <section class="hero-section">
-      {{ page.hero }}
-    </section>
+    {% if page.primary_menu or page.secondary_menu %}
+      <nav role="navigation">
+        {{ page.primary_menu }}
+        {{ page.secondary_menu }}
+      </nav>
+    {% endif %}
 
-    <section class="featured-recipes">
-      {{ page.featured_recipes }}
-    </section>
+    {# Show these sections ONLY on the homepage #}
+    {% if url('<current>') == '/' %}
+      {% if page.hero %}
+        <section class="region-hero">
+          {{ page.hero }}
+        </section>
+      {% endif %}
 
-    <section class="about-section">
-      {{ page.about }}
-    </section>
+      {% if page.featured_recipes %}
+        <section class="region-featured-recipes">
+          {{ page.featured_recipes }}
+        </section>
+      {% endif %}
 
-    <section class="events-section">
-      {{ page.events }}
-    </section>
+      {% if page.about %}
+        <section class="region-about">
+          {{ page.about }}
+        </section>
+      {% endif %}
 
-    <section class="contribute-section">
-      {{ page.contribute }}
-    </section>
-  </main>
+      {% if page.events %}
+        <section class="region-events">
+          {{ page.events }}
+        </section>
+      {% endif %}
 
-  <footer class="site-footer">
-    {{ page.footer }}
-  </footer>
+      {% if page.contribute %}
+        <section class="region-contribute">
+          {{ page.contribute }}
+        </section>
+      {% endif %}
+    {% endif %}
 
-</body>
+    <main role="main" id="main-content">
+      {% if page.content_above %}
+        <div class="region-content-above">
+          {{ page.content_above }}
+        </div>
+      {% endif %}
+
+      <div class="layout-content">
+        {{ page.content }}
+      </div>
+
+      {% if page.content_below %}
+        <div class="region-content-below">
+          {{ page.content_below }}
+        </div>
+      {% endif %}
+    </main>
+
+    {% if page.sidebar %}
+      <aside class="layout-sidebar" role="complementary">
+        {{ page.sidebar }}
+      </aside>
+    {% endif %}
+
+    <footer role="contentinfo">
+      {% if page.footer_top %}
+        <div class="footer-top">
+          {{ page.footer_top }}
+        </div>
+      {% endif %}
+      {% if page.footer %}
+        <div class="footer-classic">
+          {{ page.footer }}
+        </div>
+      {% endif %}
+      {% if page.footer_bottom %}
+        <div class="footer-bottom">
+          {{ page.footer_bottom }}
+        </div>
+      {% endif %}
+    </footer>
+
+    <js-bottom-placeholder token="{{ placeholder_token }}">
+  </body>
 </html>

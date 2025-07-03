@@ -2,10 +2,11 @@ global-styling:
   version: 1.x
   css:
     theme:
-      css/reset.css: {}
-      css/buttons.css: {}
-      css/header.css: {}
-      css/footer.css: {}
-      css/blocks.css: {}
-      css/recipes.css: {}
-      css/events.css: {}
+      css/style.css: {}
+      # css/reset.css: {}
+      # css/buttons.css: {}
+      # css/header.css: {}
+      # css/footer.css: {}
+      # css/blocks.css: {}
+      # css/recipes.css: {}
+      # css/events.css: {}
