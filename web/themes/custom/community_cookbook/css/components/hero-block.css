@@ -1,0 +1,30 @@
+/* Hero Block */
+.hero-block {
+    background: #fff8e6;
+
+    padding: 4rem 2rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .hero-block h2 {
+    font-size: 3rem;
+    color: #5b3c1a;
+  }
+  
+  .hero-block p {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+  }
+  
+  .hero-block a {
+    display: inline-block;
+    margin: 1rem 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #8c5d1d;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  
