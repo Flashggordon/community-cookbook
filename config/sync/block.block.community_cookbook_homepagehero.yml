@@ -11,7 +11,7 @@ dependencies:
     - community_cookbook
 third_party_settings:
   block_class:
-    classes: hero-background
+    classes: hero-block
 id: community_cookbook_homepagehero
 theme: community_cookbook
 region: hero

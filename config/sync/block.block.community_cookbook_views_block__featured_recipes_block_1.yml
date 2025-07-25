@@ -5,10 +5,14 @@ dependencies:
   config:
     - views.view.featured_recipes
   module:
+    - block_class
     - node
     - views
   theme:
     - community_cookbook
+third_party_settings:
+  block_class:
+    classes: featured-recipes
 id: community_cookbook_views_block__featured_recipes_block_1
 theme: community_cookbook
 region: featured_recipes

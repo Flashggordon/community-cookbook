@@ -9,9 +9,6 @@ dependencies:
     - system
   theme:
     - community_cookbook
-third_party_settings:
-  block_class:
-    classes: hero-background
 id: community_cookbook_mainnavigation
 theme: community_cookbook
 region: secondary_menu
